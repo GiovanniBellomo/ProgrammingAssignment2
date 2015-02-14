@@ -12,11 +12,9 @@
 #
 #   It Works!
 
-# Set my working Directory & cleare variables
+# Set my working Directory & clear variables
 
-# rm(list=ls())
-#setwd("C:/Users/giovanni.bellomo/Docs/Coursera MOOC/Data Science - JHU/02 - R Programming/Assignments/ProgrammingAssignment2")
-
+#   rm(list=ls())
 
 
 ## As Function Name says: it creates a CHACHE MATRIX
@@ -46,7 +44,7 @@ makeCacheMatrix <- function(matrix = matrix()) {
          setInvertedMatrix = setInvertedMatrix,
          getInvertedMatrix = getInvertedMatrix)
     
-}
+} # end makeCacheMatrix()
 
 
 ## This function chack if needed value is cached or not.
@@ -71,4 +69,4 @@ cacheSolve <- function(x, ...) {
     x$setInvertedMatrix(invertedMatrix)
     invertedMatrix
     
-}
+} # end cacheSolve()
